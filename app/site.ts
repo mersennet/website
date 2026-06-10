@@ -14,8 +14,9 @@ export const SITE = {
 
 export const LINKS = {
   docs: 'https://docs.mersennet.com',
-  explorer: 'http://46.225.30.187',
-  faucet: 'http://46.225.30.187:4003',
+  explorer: 'https://explorer.mersennet.com',
+  faucet: 'https://faucet.mersennet.com',
+  trade: 'https://trade.mersennet.com',
   github: 'https://github.com/mersennet/mersennet',
   whitepaper: 'https://docs.mersennet.com/whitepaper',
   quickStart: 'https://docs.mersennet.com/developers/quick-start/hardhat',
