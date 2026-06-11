@@ -10,7 +10,7 @@ export const SITE = {
   symbol: 'MRSN',
   blockTime: '~1s',
   consensus: 'BFT PoS',
-  rpcUrl: '46.225.30.187:8545',
+  rpcUrl: 'rpc.mersennet.com',
 } as const;
 
 export const LINKS = {

@@ -24,7 +24,7 @@ const SOLIDITY: CodeLine[] = [
 const TYPESCRIPT: CodeLine[] = [
   [{ t: 'import', c: 'k' }, { t: ' { MersennetProvider, ShieldedClient, ViewingKeyHelpers } ' }, { t: 'from', c: 'k' }, { t: " '@mersennet/sdk'", c: 's' }, { t: ';' }],
   [],
-  [{ t: 'const', c: 'k' }, { t: ' provider = ' }, { t: 'new', c: 'k' }, { t: ' ' }, { t: 'MersennetProvider', c: 'f' }, { t: '(' }, { t: "'http://46.225.30.187:8545'", c: 's' }, { t: ');' }],
+  [{ t: 'const', c: 'k' }, { t: ' provider = ' }, { t: 'new', c: 'k' }, { t: ' ' }, { t: 'MersennetProvider', c: 'f' }, { t: '(' }, { t: "'https://rpc.mersennet.com'", c: 's' }, { t: ');' }],
   [{ t: 'const', c: 'k' }, { t: ' vk = ViewingKeyHelpers.' }, { t: 'fromSeed', c: 'f' }, { t: '(' }, { t: "'my recovery phrase'", c: 's' }, { t: ');' }],
   [{ t: 'const', c: 'k' }, { t: ' wallet = ' }, { t: 'new', c: 'k' }, { t: ' ' }, { t: 'ShieldedClient', c: 'f' }, { t: '({ provider, viewingKey: vk });' }],
   [],
@@ -37,7 +37,7 @@ const TYPESCRIPT: CodeLine[] = [
 
 const CURL: CodeLine[] = [
   [{ t: '# Standard JSON-RPC — eth_* plus the mersennet_* shielded namespace.', c: 'c' }],
-  [{ t: 'curl', c: 'f' }, { t: ' -s http://46.225.30.187:8545 -X POST \\' }],
+  [{ t: 'curl', c: 'f' }, { t: ' -s https://rpc.mersennet.com -X POST \\' }],
   [{ t: "  -H 'content-type: application/json' \\" }],
   [{ t: "  -d '", c: 's' }, { t: '{"jsonrpc":"2.0","id":1,', c: 's' }],
   [{ t: '       "method":"mersennet_getShieldedBalance",', c: 's' }],
