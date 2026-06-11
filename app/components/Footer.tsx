@@ -65,7 +65,7 @@ export function Footer() {
         ))}
       </div>
       <div className={styles.footerBottom}>
-        <span>© {new Date().getFullYear()} {SITE.name} · Prime Numbers Labs</span>
+        <span>© {new Date().getFullYear()} {SITE.name}</span>
         <span>Chain {SITE.chainId} · {SITE.symbol}</span>
       </div>
     </footer>

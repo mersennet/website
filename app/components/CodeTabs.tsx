@@ -8,10 +8,10 @@ type CodeLine = Token[];
 
 // Hand-tokenized snippets — real APIs from the Mersennet repo, no fake calls.
 const SOLIDITY: CodeLine[] = [
-  [{ t: 'import', c: 'k' }, { t: ' {IPrimeOrders} ' }, { t: 'from', c: 'k' }, { t: ' "mersennet/IPrimeOrders.sol"', c: 's' }, { t: ';' }],
+  [{ t: 'import', c: 'k' }, { t: ' {IMersennetOrders} ' }, { t: 'from', c: 'k' }, { t: ' "mersennet/IMersennetOrders.sol"', c: 's' }, { t: ';' }],
   [],
   [{ t: 'contract', c: 'k' }, { t: ' ' }, { t: 'MarketMaker', c: 'f' }, { t: ' {' }],
-  [{ t: '    ' }, { t: 'IPrimeOrders' }, { t: ' constant', c: 'k' }, { t: ' BOOK = IPrimeOrders(' }, { t: 'address', c: 'k' }, { t: '(' }, { t: '0x0100', c: 'n' }, { t: '));' }],
+  [{ t: '    ' }, { t: 'IMersennetOrders' }, { t: ' constant', c: 'k' }, { t: ' BOOK = IMersennetOrders(' }, { t: 'address', c: 'k' }, { t: '(' }, { t: '0x0100', c: 'n' }, { t: '));' }],
   [],
   [{ t: '    ' }, { t: '// Atomic: place both sides + read fills in ONE transaction.', c: 'c' }],
   [{ t: '    ' }, { t: 'function', c: 'k' }, { t: ' ' }, { t: 'quote', c: 'f' }, { t: '(' }, { t: 'uint64', c: 'k' }, { t: ' mkt, ' }, { t: 'uint256', c: 'k' }, { t: ' bid, ' }, { t: 'uint256', c: 'k' }, { t: ' ask, ' }, { t: 'uint256', c: 'k' }, { t: ' size) ' }, { t: 'external', c: 'k' }, { t: ' {' }],
@@ -22,9 +22,9 @@ const SOLIDITY: CodeLine[] = [
 ];
 
 const TYPESCRIPT: CodeLine[] = [
-  [{ t: 'import', c: 'k' }, { t: ' { PrimeProvider, ShieldedClient, ViewingKeyHelpers } ' }, { t: 'from', c: 'k' }, { t: " '@mersennet/sdk'", c: 's' }, { t: ';' }],
+  [{ t: 'import', c: 'k' }, { t: ' { MersennetProvider, ShieldedClient, ViewingKeyHelpers } ' }, { t: 'from', c: 'k' }, { t: " '@mersennet/sdk'", c: 's' }, { t: ';' }],
   [],
-  [{ t: 'const', c: 'k' }, { t: ' provider = ' }, { t: 'new', c: 'k' }, { t: ' ' }, { t: 'PrimeProvider', c: 'f' }, { t: '(' }, { t: "'http://46.225.30.187:8545'", c: 's' }, { t: ');' }],
+  [{ t: 'const', c: 'k' }, { t: ' provider = ' }, { t: 'new', c: 'k' }, { t: ' ' }, { t: 'MersennetProvider', c: 'f' }, { t: '(' }, { t: "'http://46.225.30.187:8545'", c: 's' }, { t: ');' }],
   [{ t: 'const', c: 'k' }, { t: ' vk = ViewingKeyHelpers.' }, { t: 'fromSeed', c: 'f' }, { t: '(' }, { t: "'my recovery phrase'", c: 's' }, { t: ');' }],
   [{ t: 'const', c: 'k' }, { t: ' wallet = ' }, { t: 'new', c: 'k' }, { t: ' ' }, { t: 'ShieldedClient', c: 'f' }, { t: '({ provider, viewingKey: vk });' }],
   [],
@@ -36,11 +36,11 @@ const TYPESCRIPT: CodeLine[] = [
 ];
 
 const CURL: CodeLine[] = [
-  [{ t: '# Standard JSON-RPC — eth_* plus the prime_* shielded namespace.', c: 'c' }],
+  [{ t: '# Standard JSON-RPC — eth_* plus the mersennet_* shielded namespace.', c: 'c' }],
   [{ t: 'curl', c: 'f' }, { t: ' -s http://46.225.30.187:8545 -X POST \\' }],
   [{ t: "  -H 'content-type: application/json' \\" }],
   [{ t: "  -d '", c: 's' }, { t: '{"jsonrpc":"2.0","id":1,', c: 's' }],
-  [{ t: '       "method":"prime_getShieldedBalance",', c: 's' }],
+  [{ t: '       "method":"mersennet_getShieldedBalance",', c: 's' }],
   [{ t: '       "params":["vk1q8z…ke2v"]}\'', c: 's' }],
   [],
   [{ t: '# → {"result":{"perAsset":{"MRSN":"1250…000"},"noteCount":3}}', c: 'c' }],

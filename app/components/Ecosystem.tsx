@@ -21,7 +21,7 @@ const ECOSYSTEM = [
     desc: 'Testnet PRIM for development and testing.',
     href: LINKS.faucet,
   },
-  { name: 'PrimeOrders', status: 'Live', desc: 'Native order book via precompile 0x0100.' },
+  { name: 'MersennetOrders', status: 'Live', desc: 'Native order book via precompile 0x0100.' },
   { name: 'Shielded Pool', status: 'Live', desc: 'Deposit, transfer, and trade privately.' },
   { name: 'Private Lending', status: 'Soon', desc: 'Private lending & borrowing markets.' },
 ];

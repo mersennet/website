@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     'leverage trading',
     'shielded accounts',
   ],
-  authors: [{ name: 'Prime Numbers Labs' }],
+  authors: [{ name: 'Mersennet' }],
   alternates: {
     canonical: SITE.url,
   },
@@ -74,7 +74,7 @@ const jsonLd = {
   description: SITE.description,
   publisher: {
     '@type': 'Organization',
-    name: 'Prime Numbers Labs',
+    name: 'Mersennet',
     url: SITE.url,
     logo: `${SITE.url}/logo.svg`,
   },
