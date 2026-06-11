@@ -18,7 +18,7 @@ const ECOSYSTEM = [
   {
     name: 'Mersennet Faucet',
     status: 'Live',
-    desc: 'Testnet PRIM for development and testing.',
+    desc: 'Testnet MRSN for development and testing.',
     href: LINKS.faucet,
   },
   { name: 'MersennetOrders', status: 'Live', desc: 'Native order book via precompile 0x0100.' },
