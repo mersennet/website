@@ -29,7 +29,8 @@ const PHASES = [
     live: false,
     items: [
       'Genesis ceremony · 7+ independent validators',
-      'MRSN token generation — 1B fixed supply',
+      'MRSN token generation — fixed supply 2⁸⁹−1',
+      'Block reward 2.3 MRSN · halving every 33,550,336 blocks (5th perfect number)',
       'Privacy hard fork activated by governance',
     ],
   },

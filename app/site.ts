@@ -25,5 +25,3 @@ export const LINKS = {
   rpc: 'https://docs.mersennet.com/developers/rpc/methods',
   sdk: 'https://docs.mersennet.com/developers/sdks/javascript',
 } as const;
-
-export const MERSENNE_PRIMES = ['3', '7', '31', '127', '8191', '131071', '524287'] as const;

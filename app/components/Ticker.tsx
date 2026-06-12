@@ -1,4 +1,5 @@
 import styles from '../page.module.css';
+import { SITE } from '../site';
 
 const ITEMS = [
   'Zero-knowledge',
@@ -7,7 +8,7 @@ const ITEMS = [
   'ZK risk checks',
   'SP1 proven state',
   'Selective disclosure',
-  '2³¹−1 = 2147483647',
+  `2¹³−1 = ${SITE.mainnetChainId}`,
   'Groth16 bridge',
 ];
 
