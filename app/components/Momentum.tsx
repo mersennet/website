@@ -8,7 +8,7 @@ const PHASES = [
     live: true,
     items: [
       '~44K lines of Rust · 300+ tests green',
-      'Public testnet live — RPC, faucet, explorer',
+      'Public testnet live: RPC, faucet, explorer',
       'Parallel EVM + native CLOB + shielded accounts',
       'SDKs in TypeScript, Python, Go',
     ],
@@ -29,7 +29,7 @@ const PHASES = [
     live: false,
     items: [
       'Genesis ceremony · 7+ independent validators',
-      'MRSN token generation — fixed supply 2⁸⁹−1',
+      'MRSN token generation, fixed supply 2⁸⁹−1',
       'Block reward 2.3 MRSN · halving every 33,550,336 blocks (5th perfect number)',
       'Privacy hard fork activated by governance',
     ],

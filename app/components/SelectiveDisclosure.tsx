@@ -8,11 +8,11 @@ const BULLETS = [
   },
   {
     title: 'Client-side proving.',
-    text: 'Generate proofs in the browser with the WASM Noir prover — keys never leave the wallet.',
+    text: 'Generate proofs in the browser with the WASM Noir prover. Keys never leave the wallet.',
   },
   {
     title: 'Note scanning.',
-    text: 'Wallets rebuild private state by scanning notes and tracking nullifiers — no central indexer of your funds.',
+    text: 'Wallets rebuild private state by scanning notes and tracking nullifiers, so no central indexer ever sees your funds.',
   },
 ];
 
@@ -25,7 +25,7 @@ export function SelectiveDisclosure() {
           <h2 className={styles.secTitle}>Private by default. Auditable on your terms.</h2>
           <p className={styles.secLead}>
             Grant a viewing key to an auditor, exchange, or counterparty and reveal exactly
-            what you choose — a balance, a position, a single order — without exposing the
+            what you choose (a balance, a position, a single order) without exposing the
             rest of your account.
           </p>
         </Reveal>

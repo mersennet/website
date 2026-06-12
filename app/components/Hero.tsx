@@ -23,8 +23,8 @@ export function Hero() {
           </h1>
           <p className={styles.lede}>
             {SITE.name} brings account-level privacy to the EVM and a native on-chain order
-            book — leverage secured by zero-knowledge risk checks, state proven end to end
-            with SP1.
+            book. Leverage is secured by zero-knowledge risk checks, and state is proven end
+            to end with SP1.
           </p>
           <div className={styles.heroCtas}>
             <a className={`${styles.btn} ${styles.btnPrimary}`} href={LINKS.docs}>

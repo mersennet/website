@@ -12,7 +12,7 @@ export function BuildShowcase() {
           <span className={styles.secIndex}>[ 05 ] // Build</span>
           <h2 className={styles.secTitle}>Your stack already works here.</h2>
           <p className={styles.secLead}>
-            Solidity, Hardhat, Foundry, ethers — unchanged. Privacy is one import away:
+            Solidity, Hardhat, Foundry, ethers. All unchanged. Privacy is one import away:
             an order book at precompile <code className={styles.inlineCode}>0x0100</code>,
             shielded accounts behind <code className={styles.inlineCode}>0x0200</code>,
             and an SDK that proves in the browser.

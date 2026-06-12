@@ -8,7 +8,7 @@ const STEPS = [
   },
   {
     title: 'Submit shielded',
-    text: 'Transactions carry nullifiers and output commitments — no addresses, balances, or order details in the clear.',
+    text: 'Transactions carry nullifiers and output commitments. No addresses, balances, or order details ever appear in the clear.',
   },
   {
     title: 'Verify in ZK',
@@ -16,7 +16,7 @@ const STEPS = [
   },
   {
     title: 'Prove the block',
-    text: 'Each block is proven with SP1 and Groth16-wrapped for Ethereum — verifiable from a succinct proof.',
+    text: 'Each block is proven with SP1 and Groth16-wrapped for Ethereum, verifiable from a succinct proof.',
   },
 ];
 

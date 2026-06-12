@@ -7,7 +7,7 @@ import { SITE } from '../site';
 const PILLARS: { title: string; text: string; icon: ReactNode }[] = [
   {
     title: 'Account-level privacy',
-    text: 'Shielded accounts conceal balances, positions, and order flow across the EVM and the native order book — full account privacy, not just mixed transfers.',
+    text: 'Shielded accounts conceal balances, positions, and order flow across the EVM and the native order book, giving full account privacy, not just mixed transfers.',
     icon: (
       <Icon
         path={
@@ -21,7 +21,7 @@ const PILLARS: { title: string; text: string; icon: ReactNode }[] = [
   },
   {
     title: 'Risk checks in zero knowledge',
-    text: 'Leverage without open liquidations. Solvency and margin are proven with ZK proofs instead of public liquidation auctions — positions stay private, the chain stays safe.',
+    text: 'Leverage without open liquidations. Solvency and margin are proven with ZK proofs instead of public liquidation auctions. Positions stay private, and the chain stays safe.',
     icon: (
       <Icon
         path={
@@ -35,7 +35,7 @@ const PILLARS: { title: string; text: string; icon: ReactNode }[] = [
   },
   {
     title: 'Native on-chain order book',
-    text: 'A central limit order book exposed to Solidity through a precompile. Atomic, composable matching beyond AMMs — now with shielded order placement.',
+    text: 'A central limit order book exposed to Solidity through a precompile. Atomic, composable matching beyond AMMs, now with shielded order placement.',
     icon: (
       <Icon
         path={
@@ -50,7 +50,7 @@ const PILLARS: { title: string; text: string; icon: ReactNode }[] = [
   },
   {
     title: 'Verifiable state',
-    text: 'State transitions are proven with SP1 and verified on-chain via a Groth16 bridge. Anyone can verify the chain from a succinct proof — no trusted full node required.',
+    text: 'State transitions are proven with SP1 and verified on-chain via a Groth16 bridge. Anyone can verify the chain from a succinct proof. No trusted full node required.',
     icon: (
       <Icon
         path={

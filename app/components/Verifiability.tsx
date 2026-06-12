@@ -49,11 +49,11 @@ export function Verifiability() {
               <strong style={{ color: 'var(--text)' }}>SP1</strong> and wrapped into a{' '}
               <strong style={{ color: 'var(--text)' }}>Groth16</strong> proof an Ethereum
               contract can verify. Light clients accept Mersennet state roots from a
-              succinct proof — no full node, no trusted RPC, no re-execution.
+              succinct proof. No full node, no trusted RPC, no re-execution.
             </p>
             <p className={styles.secLead}>
               The same nullifier set that protects shielded accounts is proven correct in
-              every block, so privacy and safety hold together — publicly checkable, fully
+              every block, so privacy and safety hold together: publicly checkable, fully
               private.
             </p>
           </Reveal>
