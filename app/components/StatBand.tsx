@@ -3,7 +3,7 @@ import { Reveal } from './Reveal';
 
 const STATS = [
   { num: '131071', label: 'Chain ID · 2¹⁷−1' },
-  { num: '~1s', label: 'Block time' },
+  { num: '~2s', label: 'Block time' },
   { num: 'EVM', label: 'Shanghai-equivalent' },
   { num: 'SP1', label: 'Proven state' },
 ];

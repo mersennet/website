@@ -8,7 +8,7 @@ export const SITE = {
   chainId: 131071,
   mainnetChainId: 8191,
   symbol: 'MRSN',
-  blockTime: '~1s',
+  blockTime: '~2s',
   consensus: 'BFT PoS',
   rpcUrl: 'rpc.mersennet.com',
 } as const;
