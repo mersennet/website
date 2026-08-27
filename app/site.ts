@@ -22,6 +22,7 @@ export const LINKS = {
   whitepaper: 'https://docs.mersennet.com/whitepaper',
   quickStart: 'https://docs.mersennet.com/developers/quick-start/hardhat',
   networkInfo: 'https://docs.mersennet.com/getting-started/network-info',
+  status: 'https://status.mersennet.com',
   rpc: 'https://docs.mersennet.com/developers/rpc/methods',
   sdk: 'https://docs.mersennet.com/developers/sdks/javascript',
 } as const;

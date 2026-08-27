@@ -19,6 +19,7 @@ const COLUMNS = [
       { label: 'Trade', href: LINKS.trade },
       { label: 'Faucet', href: LINKS.faucet },
       { label: 'Network Info', href: LINKS.networkInfo },
+      { label: 'Status', href: LINKS.status },
     ],
   },
   {
