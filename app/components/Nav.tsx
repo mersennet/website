@@ -8,7 +8,7 @@ const NAV = [
   { n: '3.0', label: 'Edge', href: '#edge' },
   { n: '4.0', label: 'Build', href: '#build' },
   { n: '5.0', label: 'Verify', href: '#verifiable' },
-  { n: '6.0', label: 'Run a node', href: '#operate' },
+  { n: '6.0', label: 'Nodes', href: '#operate' },
   { n: '7.0', label: 'Trade', href: LINKS.trade },
   { n: '8.0', label: 'GitHub', href: LINKS.github },
 ];

@@ -138,7 +138,7 @@ export function Operate() {
         </Reveal>
 
         <div className={styles.eco}>
-          <Reveal as="article" className={styles.ecoCard}>
+          <Reveal as="article" className={`${styles.ecoCard} ${styles.opCard}`}>
             <div className={styles.ecoHead}>
               <span className={styles.ecoName}>Run a node</span>
               <span className={`${styles.badge} ${styles.badgeLive}`}>~1 min</span>
@@ -159,7 +159,7 @@ export function Operate() {
             </div>
           </Reveal>
 
-          <Reveal as="article" delay={60} className={styles.ecoCard}>
+          <Reveal as="article" delay={60} className={`${styles.ecoCard} ${styles.opCard}`}>
             <div className={styles.ecoHead}>
               <span className={styles.ecoName}>Become a validator</span>
               <span className={`${styles.badge} ${styles.badgeLive}`}>1,000 {SITE.symbol}</span>
@@ -184,7 +184,7 @@ export function Operate() {
             </div>
           </Reveal>
 
-          <Reveal as="article" delay={120} className={styles.ecoCard}>
+          <Reveal as="article" delay={120} className={`${styles.ecoCard} ${styles.opCard}`}>
             <div className={styles.ecoHead}>
               <span className={styles.ecoName}>Earn points</span>
               <span className={`${styles.badge} ${styles.badgeLive}`}>500 / day</span>

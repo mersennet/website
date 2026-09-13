@@ -142,6 +142,7 @@
   display: inline-flex;
   align-items: baseline;
   gap: 0.4rem;
+  white-space: nowrap;
   padding: 0.4rem 0.8rem;
   font-family: var(--mono);
   font-size: 0.72rem;
@@ -1430,6 +1431,15 @@
 }
 
 /* ── Operate the network ───────────────────────────────────────────────── */
+.opCard {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.opCard .opLinks .btn {
+  width: auto;
+  flex: 1 1 auto;
+}
 .opStats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1458,7 +1468,7 @@
 }
 .opCmd {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.6rem;
   margin: 0.9rem 0 1rem;
   padding: 0.7rem 0.85rem;
@@ -1466,12 +1476,13 @@
   background: rgba(255, 255, 255, 0.02);
   font-family: var(--mono);
   font-size: 0.74rem;
+  line-height: 1.6;
   color: #cdd3df;
-  overflow-x: auto;
-  white-space: nowrap;
 }
 .opCmd code {
   flex: 1;
+  min-width: 0;
+  word-break: break-all;
 }
 .opCopy {
   flex: none;
