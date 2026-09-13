@@ -31,8 +31,16 @@ export function Hero() {
               Enter the network
               <ArrowRight />
             </a>
-            <a className={`${styles.btn} ${styles.btnGhost}`} href={LINKS.whitepaper}>
-              Whitepaper
+            <a
+              className={`${styles.btn} ${styles.btnGhost}`}
+              href={LINKS.trade}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Trade
+            </a>
+            <a className={`${styles.btn} ${styles.btnGhost}`} href="#operate">
+              Run a node
             </a>
           </div>
           <div className={styles.heroSpecs}>

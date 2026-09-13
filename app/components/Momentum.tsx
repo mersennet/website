@@ -8,8 +8,11 @@ const PHASES = [
     live: true,
     items: [
       '~44K lines of Rust · 300+ tests green',
-      'Public testnet live: RPC, faucet, explorer',
+      'Public testnet live: dual RPC with failover, faucet, explorer, trade terminal, status page',
       'Parallel EVM + native CLOB + shielded accounts',
+      'Open validator set: register with 1,000 MRSN, hourly epochs, jailing without slashing',
+      'One-command node install from signed releases · snapshot bootstrap in ~1 minute',
+      'Fork choice by finality · verified node runners earn points',
       'SDKs in TypeScript, Python, Go',
     ],
   },
@@ -28,7 +31,7 @@ const PHASES = [
     title: 'Mainnet & MRSN',
     live: false,
     items: [
-      'Genesis ceremony · 7+ independent validators',
+      'Genesis ceremony · 7+ independent validators (set already opening on testnet)',
       'MRSN token generation, fixed supply 2⁸⁹−1',
       'Block reward 2.3 MRSN · halving every 33,550,336 blocks (5th perfect number)',
       'Privacy hard fork activated by governance',

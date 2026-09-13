@@ -23,6 +23,16 @@ export const LINKS = {
   quickStart: 'https://docs.mersennet.com/developers/quick-start/hardhat',
   networkInfo: 'https://docs.mersennet.com/getting-started/network-info',
   status: 'https://status.mersennet.com',
+  statusPage: 'https://status.mersennet.com/status/mersennet',
   rpc: 'https://docs.mersennet.com/developers/rpc/methods',
   sdk: 'https://docs.mersennet.com/developers/sdks/javascript',
+  // Operate the network
+  downloads: 'https://mersennet.com/downloads/',
+  runNode: 'https://docs.mersennet.com/validators/run-a-node/',
+  becomeValidator: 'https://docs.mersennet.com/validators/become-a-validator/',
+  staking: 'https://trade.mersennet.com/staking',
+  points: 'https://trade.mersennet.com/points',
+  explorerNetwork: 'https://explorer.mersennet.com/#/network',
+  explorerValidators: 'https://explorer.mersennet.com/#/validators',
+  installOneLiner: 'curl -fsSL https://mersennet.com/downloads/install.sh | sudo bash',
 } as const;

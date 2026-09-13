@@ -21,6 +21,30 @@ const ECOSYSTEM = [
     desc: 'Testnet MRSN for development and testing.',
     href: LINKS.faucet,
   },
+  {
+    name: 'Staking & Validators',
+    status: 'Live',
+    desc: 'Delegate MRSN or register your node as a validator — the set is open.',
+    href: LINKS.staking,
+  },
+  {
+    name: 'Points',
+    status: 'Live',
+    desc: 'Season 1: 1 point per $1 traded, 500 a day for a verified node.',
+    href: LINKS.points,
+  },
+  {
+    name: 'Downloads',
+    status: 'Live',
+    desc: 'Signed node releases, installer and state snapshots.',
+    href: LINKS.downloads,
+  },
+  {
+    name: 'Status',
+    status: 'Live',
+    desc: 'Live uptime of RPC, explorer, faucet, terminal and snapshots.',
+    href: LINKS.statusPage,
+  },
   { name: 'MersennetOrders', status: 'Live', desc: 'Native order book via precompile 0x0100.' },
   { name: 'Shielded Pool', status: 'Live', desc: 'Deposit, transfer, and trade privately.' },
   { name: 'Private Lending', status: 'Soon', desc: 'Private lending & borrowing markets.' },
@@ -34,8 +58,8 @@ export function Ecosystem() {
           <span className={styles.secIndex}>[ 09 ] // Ecosystem</span>
           <h2 className={styles.secTitle}>Everything you need, already on testnet.</h2>
           <p className={styles.secLead}>
-            Swaps, order-book trading, a shielded pool, and tooling are live on the{' '}
-            {SITE.name} testnet today.
+            Order-book trading, staking, points, a shielded pool, node releases and tooling are
+            live on the {SITE.name} testnet today.
           </p>
         </Reveal>
         <div className={styles.eco}>

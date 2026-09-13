@@ -12,6 +12,7 @@ import { BuildShowcase } from './components/BuildShowcase';
 import { SelectiveDisclosure } from './components/SelectiveDisclosure';
 import { Verifiability } from './components/Verifiability';
 import { Ecosystem } from './components/Ecosystem';
+import { Operate } from './components/Operate';
 import { CtaBand } from './components/CtaBand';
 import { Footer } from './components/Footer';
 
@@ -36,6 +37,7 @@ export default function Home() {
         <Verifiability />
         <Momentum />
         <Ecosystem />
+        <Operate />
         <div className={styles.ctaBandWrap}>
           <CtaBand />
         </div>

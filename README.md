@@ -35,7 +35,7 @@ app/
   globals.css                # reset + base
   site.ts                    # brand facts + external links (single source of truth)
   sitemap.ts / robots.ts     # generated sitemap.xml + robots.txt
-  components/                # Nav, Hero, StatBand, Pillars, SelectiveDisclosure, Ecosystem, CtaBand, Footer, Icon, Backdrop
+  components/                # Nav, Hero, Ticker, StatBand, Pillars, Thesis, Edge, HowItWorks, BuildShowcase, SelectiveDisclosure, Verifiability, Momentum, Ecosystem, Operate (live RPC stats), CtaBand, Footer, Icon
 public/
   favicon.svg                # icon
   logo.svg                   # brand mark
