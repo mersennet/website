@@ -114,7 +114,10 @@ export function Operate() {
           <h2 className={styles.secTitle}>Run it. Validate it. Get paid in points.</h2>
           <p className={styles.secLead}>
             A public testnet where every part is yours to test: a node in one command, a
-            validator seat for 1,000 {SITE.symbol}, and daily points for keeping it online.
+            validator seat for 1,000 {SITE.symbol}, and daily points for keeping it online.{' '}
+            <a href={LINKS.testTheNetwork} target="_blank" rel="noopener noreferrer">
+              The one-page map of everything you can test →
+            </a>
           </p>
         </Reveal>
 
