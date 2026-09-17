@@ -30,6 +30,7 @@ const COLUMNS = [
   {
     title: 'Community',
     links: [
+      { label: 'Telegram chat', href: LINKS.telegram },
       { label: 'GitHub', href: LINKS.github },
       { label: 'Whitepaper', href: LINKS.whitepaper },
     ],
