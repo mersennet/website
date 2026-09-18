@@ -13,6 +13,7 @@ const PHASES = [
       'Open validator set: register with 1,000 MRSN, hourly epochs, jailing without slashing',
       'One-command node install from signed releases · snapshot bootstrap in ~1 minute',
       'Fork choice by finality · verified node runners earn points',
+      'Agent keys for one-click trading · $0.01 ticks · keeper liquidations, PnL settlement and a pooled maker vault (switching on 19–21 Sep)',
       'SDKs in TypeScript, Python, Go',
     ],
   },
