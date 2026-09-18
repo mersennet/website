@@ -7,7 +7,7 @@ import { SITE } from '../site';
 const PILLARS: { title: string; text: string; icon: ReactNode }[] = [
   {
     title: 'Account-level privacy',
-    text: 'Shielded accounts conceal balances, positions, and order flow across the EVM and the native order book, giving full account privacy, not just mixed transfers.',
+    text: 'Shielded accounts conceal balances, positions and order flow across the EVM and the native order book — full account privacy, not just mixed transfers. The pool is anchored in every block today and opens at the privacy hard fork.',
     icon: (
       <Icon
         path={
@@ -35,7 +35,7 @@ const PILLARS: { title: string; text: string; icon: ReactNode }[] = [
   },
   {
     title: 'Native on-chain order book',
-    text: 'A central limit order book exposed to Solidity through a precompile. Atomic, composable matching beyond AMMs, now with shielded order placement.',
+    text: 'A central limit order book exposed to Solidity through a precompile. Atomic, composable matching beyond AMMs — live on the testnet today; shielded order placement arrives with the privacy fork.',
     icon: (
       <Icon
         path={
@@ -50,7 +50,7 @@ const PILLARS: { title: string; text: string; icon: ReactNode }[] = [
   },
   {
     title: 'Verifiable state',
-    text: 'State transitions are proven with SP1 and verified on-chain via a Groth16 bridge. Anyone can verify the chain from a succinct proof. No trusted full node required.',
+    text: 'State transitions are proven with SP1; the Groth16 wrapper lets an Ethereum contract verify them (the bridge verifying key is in flight). Anyone can check a block from a succinct proof — no trusted full node required.',
     icon: (
       <Icon
         path={

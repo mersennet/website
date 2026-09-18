@@ -174,7 +174,7 @@ export function Operate() {
             </p>
             <ol className={styles.opSteps}>
               <li><strong>Top 12</strong> by self-stake + delegations are active</li>
-              <li><strong>Miss &gt;20%</strong> of your slots and you sit out one epoch — no slashing</li>
+              <li><strong>Miss &gt;20%</strong> of your slots and you sit out the next epoch — downtime is never slashed, only signing two blocks at one height is</li>
               <li><strong>Leave any time</strong>; stake unbonds in ~4 hours</li>
             </ol>
             <div className={styles.opLinks}>
@@ -194,7 +194,7 @@ export function Operate() {
             </div>
             <p className={styles.ecoDesc}>
               A node with your wallet as operator is verified automatically within ten minutes
-              and earns 500 points a day while it is online. Trading earns 1 point per dollar;
+              and earns 500 points a day while it is online. Trading earns 1 point per dollar;{' '}
               {SITE.symbol} deposited in the maker vault — the pool behind the market maker —
               earns LP points every day it stays. Verified nodes appear on the explorer&apos;s
               Network page with your badge.

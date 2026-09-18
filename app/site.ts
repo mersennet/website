@@ -34,8 +34,8 @@ export const LINKS = {
   staking: 'https://trade.mersennet.com/staking',
   points: 'https://trade.mersennet.com/points',
   vault: 'https://trade.mersennet.com/vault',
-  explorerNetwork: 'https://explorer.mersennet.com/#/network',
-  explorerValidators: 'https://explorer.mersennet.com/#/validators',
+  explorerNetwork: 'https://explorer.mersennet.com/network',
+  explorerValidators: 'https://explorer.mersennet.com/validators',
   testTheNetwork: 'https://docs.mersennet.com/getting-started/test-the-network/',
   installOneLiner: 'curl -fsSL https://mersennet.com/downloads/install.sh | sudo bash',
 } as const;

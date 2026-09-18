@@ -51,6 +51,29 @@ export function Nav() {
             <span className={styles.navDot} />
             Testnet
           </span>
+          {/* Phone menu: a <details> drawer — no client JS on a static export,
+              works with the keyboard, and the section links were otherwise
+              unreachable under 900px (the header collapsed to the brand). */}
+          <details className={styles.navDrawer}>
+            <summary className={styles.navBurger} aria-label="Open menu">
+              <span /><span /><span />
+            </summary>
+            <div className={styles.navDrawerPanel}>
+              <a className={styles.navDrawerCta} href={LINKS.trade} target="_blank" rel="noopener noreferrer">Open the terminal ↗</a>
+              <a className={styles.navDrawerCta} href={LINKS.faucet} target="_blank" rel="noopener noreferrer">Claim testnet MRSN ↗</a>
+              {NAV.map((item) => (
+                <a
+                  key={item.label}
+                  className={styles.navDrawerLink}
+                  href={item.href}
+                  {...(item.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                >
+                  <i>{item.n}</i>
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          </details>
         </div>
       </div>
     </nav>

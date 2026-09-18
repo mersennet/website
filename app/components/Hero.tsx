@@ -27,20 +27,22 @@ export function Hero() {
             to end with SP1.
           </p>
           <div className={styles.heroCtas}>
-            <a className={`${styles.btn} ${styles.btnPrimary}`} href={LINKS.docs}>
-              Enter the network
-              <ArrowRight />
-            </a>
+            {/* Primary = the thing a visitor can do in the next minute on the
+                public testnet; docs are one click further down the page. */}
             <a
-              className={`${styles.btn} ${styles.btnGhost}`}
+              className={`${styles.btn} ${styles.btnPrimary}`}
               href={LINKS.trade}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Trade
+              Open the terminal
+              <ArrowRight />
             </a>
             <a className={`${styles.btn} ${styles.btnGhost}`} href="#operate">
               Run a node
+            </a>
+            <a className={`${styles.btn} ${styles.btnGhost}`} href={LINKS.docs}>
+              Docs
             </a>
           </div>
           <div className={styles.heroSpecs}>
