@@ -18,7 +18,7 @@ export const LINKS = {
   explorer: 'https://explorer.mersennet.com',
   faucet: 'https://faucet.mersennet.com',
   trade: 'https://trade.mersennet.com',
-  github: 'https://github.com/mersennet/mersennet',
+  github: 'https://github.com/mersennet',
   telegram: 'https://t.me/Mersennet',
   whitepaper: 'https://docs.mersennet.com/whitepaper',
   quickStart: 'https://docs.mersennet.com/developers/quick-start/hardhat',
