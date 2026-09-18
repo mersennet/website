@@ -194,12 +194,17 @@ export function Operate() {
             </div>
             <p className={styles.ecoDesc}>
               A node with your wallet as operator is verified automatically within ten minutes
-              and earns 500 points a day while it is online. Trading earns 1 point per dollar.
-              Verified nodes appear on the explorer&apos;s Network page with your badge.
+              and earns 500 points a day while it is online. Trading earns 1 point per dollar;
+              {SITE.symbol} deposited in the maker vault — the pool behind the market maker —
+              earns LP points every day it stays. Verified nodes appear on the explorer&apos;s
+              Network page with your badge.
             </p>
             <div className={styles.opLinks}>
               <a className={`${styles.btn} ${styles.btnSm}`} href={LINKS.points} target="_blank" rel="noopener noreferrer">
                 Points →
+              </a>
+              <a className={`${styles.btn} ${styles.btnSm}`} href={LINKS.vault} target="_blank" rel="noopener noreferrer">
+                Maker vault
               </a>
               <a className={`${styles.btn} ${styles.btnSm}`} href={LINKS.explorerNetwork} target="_blank" rel="noopener noreferrer">
                 Network nodes
