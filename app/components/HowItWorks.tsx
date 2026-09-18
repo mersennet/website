@@ -8,7 +8,7 @@ const STEPS = [
   },
   {
     title: 'Submit shielded',
-    text: 'Transactions carry nullifiers and output commitments. No addresses, balances, or order details ever appear in the clear.',
+    text: 'Shielded transactions carry nullifiers and output commitments, so no addresses, balances or order details appear in the clear. This lane opens at the privacy hard fork.',
   },
   {
     title: 'Verify in ZK',
@@ -16,7 +16,7 @@ const STEPS = [
   },
   {
     title: 'Prove the block',
-    text: 'Each block is proven with SP1 and Groth16-wrapped for Ethereum, verifiable from a succinct proof.',
+    text: 'Each block is proven with SP1 and Groth16-wrapped for Ethereum, verifiable from a succinct proof. The Ethereum-side verifier ships with the bridge.',
   },
 ];
 

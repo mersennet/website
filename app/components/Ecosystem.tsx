@@ -6,7 +6,7 @@ const ECOSYSTEM = [
   {
     name: 'Mersennet Trade',
     status: 'Live',
-    desc: 'Order-book trading terminal on the native CLOB.',
+    desc: 'Perpetuals terminal on the native order book (the MersennetOrders precompile at 0x…0100).',
     href: LINKS.trade,
   },
   {
@@ -45,8 +45,13 @@ const ECOSYSTEM = [
     desc: 'Live uptime of RPC, explorer, faucet, terminal and snapshots.',
     href: LINKS.statusPage,
   },
-  { name: 'MersennetOrders', status: 'Live', desc: 'Native order book via precompile 0x0100.' },
-  { name: 'Shielded Pool', status: 'Live', desc: 'Deposit, transfer, and trade privately.' },
+  {
+    name: 'Maker Vault',
+    status: 'Live',
+    desc: 'Pool MRSN behind the market maker; shares track its PnL and earn LP points. Deposits open Sun 20 Sep.',
+    href: LINKS.vault,
+  },
+  { name: 'Shielded Pool', status: 'At the fork', desc: 'Root anchored in every block today; private deposits, transfers and orders switch on at the privacy hard fork.' },
   { name: 'Private Lending', status: 'Soon', desc: 'Private lending & borrowing markets.' },
 ];
 
@@ -58,8 +63,8 @@ export function Ecosystem() {
           <span className={styles.secIndex}>[ 09 ] // Ecosystem</span>
           <h2 className={styles.secTitle}>Everything you need, already on testnet.</h2>
           <p className={styles.secLead}>
-            Order-book trading, staking, points, a shielded pool, node releases and tooling are
-            live on the {SITE.name} testnet today.
+            Order-book trading, staking, points, node releases and tooling are live on the{' '}
+            {SITE.name} testnet today; the shielded pool switches on at the privacy hard fork.
           </p>
         </Reveal>
         <div className={styles.eco}>
