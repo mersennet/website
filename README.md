@@ -51,3 +51,7 @@ public/
 
 - The OpenGraph image is provided as `public/og.svg`. Some social platforms prefer PNG; export `og.svg` to a 1200x630 PNG and point `openGraph.images` / `twitter.images` in `app/layout.tsx` at it if you want maximum preview compatibility.
 - External links (explorer, faucet) currently point at the testnet host IP. Update them in `app/site.ts` once DNS is in place.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Copyright (c) 2026 Mersennet Foundation. Security reports: security@mersennet.com ([SECURITY.md](SECURITY.md)).
