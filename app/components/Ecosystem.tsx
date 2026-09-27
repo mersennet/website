@@ -48,7 +48,7 @@ const ECOSYSTEM = [
   {
     name: 'Maker Vault',
     status: 'Live',
-    desc: 'Pool MRSN behind the market maker; shares track its PnL and earn LP points. Deposits open Sun 20 Sep.',
+    desc: 'Pool MRSN behind the market maker; shares track its PnL and earn LP points. Deposits opened September 20, 2026.',
     href: LINKS.vault,
   },
   { name: 'Shielded Pool', status: 'At the fork', desc: 'Root anchored in every block today; private deposits, transfers and orders switch on at the privacy hard fork.' },
