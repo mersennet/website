@@ -5,8 +5,9 @@ import styles from '../page.module.css';
 
 type Line = { text: string; kind: 'cmd' | 'out' | 'ok' | 'dim' };
 
-// One full shielded session, accurate to the protocol: shield → private
-// order → SP1 block proof → owner-side scan.
+// One full shielded session as the protocol design has it (shield → private
+// order → SP1 block proof → owner-side scan). None of it runs before the privacy
+// hard fork and there is no Ethereum verifier yet, so the header labels it a preview.
 const SCRIPT: Line[] = [
   { kind: 'cmd', text: 'mrsn shield --amount 250 MRSN' },
   { kind: 'dim', text: '→ proving output.nr in-browser (wasm) … 388 ms' },
@@ -97,7 +98,7 @@ export function TerminalDemo() {
           <i /><i /><i />
         </span>
         <span>mersennet — shielded session</span>
-        <span className={styles.termLive}>● REC</span>
+        <span className={styles.termLive}>PREVIEW · privacy hard fork</span>
       </div>
       <div className={styles.termBody} ref={bodyRef} aria-live="off">
         {lines.map((l, i) => (

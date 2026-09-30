@@ -173,7 +173,7 @@ export function Operate() {
               produce blocks from the next hourly epoch.
             </p>
             <ol className={styles.opSteps}>
-              <li><strong>Top 12</strong> by self-stake + delegations are active</li>
+              <li><strong>Up to 12</strong> by self-stake + delegations are active, <strong>50</strong> from block 2,127,600 (Sat 3 Oct)</li>
               <li><strong>Miss &gt;20%</strong> of your slots and you sit out the next epoch — downtime is never slashed, only signing two blocks at one height is</li>
               <li><strong>Leave any time</strong>; stake unbonds in ~4 hours</li>
             </ol>

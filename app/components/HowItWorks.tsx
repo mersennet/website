@@ -16,7 +16,7 @@ const STEPS = [
   },
   {
     title: 'Prove the block',
-    text: 'Each block is proven with SP1 and Groth16-wrapped for Ethereum, verifiable from a succinct proof. The Ethereum-side verifier ships with the bridge.',
+    text: 'Each block runs through the SP1 proof pipeline (development prover on the testnet), designed to be Groth16-wrapped for Ethereum and verifiable from a succinct proof. The Ethereum-side verifier ships with the bridge.',
   },
 ];
 
