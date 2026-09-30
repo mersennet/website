@@ -20,6 +20,7 @@ export const LINKS = {
   trade: 'https://trade.mersennet.com',
   github: 'https://github.com/mersennet',
   telegram: 'https://t.me/Mersennet',
+  x: 'https://x.com/mersennetlabs',
   whitepaper: 'https://docs.mersennet.com/whitepaper',
   quickStart: 'https://docs.mersennet.com/developers/quick-start/hardhat',
   networkInfo: 'https://docs.mersennet.com/getting-started/network-info',
