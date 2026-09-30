@@ -6,7 +6,8 @@ const ROWS: { k: string; v: string; ok?: boolean }[] = [
   { k: 'prevStateRoot', v: '0x9f3a…b21c' },
   { k: 'newStateRoot', v: '0x4d77…0e8a' },
   { k: 'nullifierRoot', v: '0xc015…7f1d' },
-  { k: 'proofType', v: 'SP1 → Groth16' },
+  { k: 'proofType', v: 'SP1' },
+  { k: 'proverMode', v: 'development' },
   { k: 'verify()', v: 'ok: true', ok: true },
 ];
 
@@ -45,10 +46,11 @@ export function Verifiability() {
           </Reveal>
           <Reveal as="div" delay={100}>
             <p className={styles.secLead} style={{ marginBottom: '1rem' }}>
-              Every block&apos;s state transition is proven with{' '}
-              <strong style={{ color: 'var(--text)' }}>SP1</strong> and wrapped into a{' '}
+              Every block&apos;s state transition runs through the{' '}
+              <strong style={{ color: 'var(--text)' }}>SP1</strong> proof pipeline (the public
+              testnet uses the development prover), designed to be wrapped into a{' '}
               <strong style={{ color: 'var(--text)' }}>Groth16</strong> proof an Ethereum
-              contract can verify. Light clients accept Mersennet state roots from a
+              contract can verify. Light clients will accept Mersennet state roots from a
               succinct proof. No full node, no trusted RPC, no re-execution.
             </p>
             <p className={styles.secLead}>

@@ -9,11 +9,11 @@ const PHASES = [
     items: [
       '~44K lines of Rust · 300+ tests green',
       'Public testnet live: dual RPC with failover, faucet, explorer, trade terminal, status page',
-      'Parallel EVM + native CLOB + shielded accounts',
+      'Parallel EVM + native CLOB',
       'Open validator set: register with 1,000 MRSN, hourly epochs, jailing without slashing',
       'One-command node install from signed releases · snapshot bootstrap in ~1 minute',
       'Fork choice by finality · verified node runners earn points',
-      'Agent keys for one-click trading · $0.01 ticks · keeper liquidations, PnL settlement and a pooled maker vault (switching on 19–20 Sep)',
+      'Agent keys for one-click trading · $0.01 ticks · keeper liquidations, PnL settlement and a pooled maker vault (live since 19–20 Sep)',
       'SDKs in TypeScript, Python, Go',
     ],
   },

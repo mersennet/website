@@ -22,9 +22,9 @@ export function Hero() {
             <span className={styles.cursor} aria-hidden="true" />
           </h1>
           <p className={styles.lede}>
-            {SITE.name} brings account-level privacy to the EVM and a native on-chain order
-            book. Leverage is secured by zero-knowledge risk checks, and state is proven end
-            to end with SP1.
+            {SITE.name} brings a native on-chain order book to the EVM, and every block runs
+            through the SP1 proof pipeline. Account-level privacy, with leverage secured by
+            zero-knowledge risk checks, arrives with the privacy hard fork.
           </p>
           <div className={styles.heroCtas}>
             {/* Primary = the thing a visitor can do in the next minute on the
@@ -81,7 +81,7 @@ export function Hero() {
             </div>
             <div className={styles.panelRow}>
               <span>Proof system</span>
-              <b>SP1 → Groth16</b>
+              <b>SP1 · dev prover on testnet</b>
             </div>
             <div className={styles.panelRow}>
               <span>RPC</span>
