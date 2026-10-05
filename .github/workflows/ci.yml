@@ -21,4 +21,5 @@ jobs:
       - run: npm run build
       - name: Export produced the pages
         run: test -f out/index.html && test -f out/sitemap.xml && echo "static export ok"
-      - run: npm audit --audit-level=high
+      - name: npm audit --audit-level=high (time-limited exceptions in audit-allowlist.json)
+        run: node scripts/audit.mjs
